@@ -1,0 +1,25 @@
+parameters:
+  secret_management:
+    vault_addr: https://vault.example.com
+    vault_mount: kv
+    vault_role: syn-cluster
+  commodore:
+    jsonnet_libs:
+      - name: kube-libsonnet
+        repository: https://github.com/bitnami-labs/kube-libsonnet
+        files:
+          - libfile: kube.libsonnet
+            targetfile: kube.libjsonnet
+
+  kapitan:
+    vars:
+      target: ${target_name}
+      namespace: ${target_name}
+    secrets:
+      vaultkv:
+        VAULT_ADDR: ${secret_management:vault_addr}
+        VAULT_SKIP_VERIFY: 'false'
+        VAULT_CAPATH: /etc/ssl/certs/
+        auth: token
+        engine: kv-v2
+        mount: ${secret_management:vault_mount}

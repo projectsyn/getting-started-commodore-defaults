@@ -1,0 +1,3 @@
+components:
+- name: openshift4-oauth
+  url: https://github.com/appuio/component-openshift4-oauth.git
