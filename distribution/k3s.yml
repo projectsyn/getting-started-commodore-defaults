@@ -1,3 +1,4 @@
 ---
 classes:
+- components.argocd
 - components.metrics-server
