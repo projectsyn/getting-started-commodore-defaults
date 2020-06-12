@@ -1,3 +1,5 @@
 components:
+- name: argocd
+  url: https://github.com/projectsyn/component-argocd.git
 - name: metrics-server
   url: https://github.com/projectsyn/component-metrics-server.git
