@@ -1,3 +1,8 @@
+classes:
+- global.distribution.${facts:distribution}
+- global.cloud.${facts:cloud}
+- ${cluster:tenant}.${cluster:name}
+
 parameters:
   secret_management:
     vault_addr: https://vault.example.com
@@ -23,3 +28,6 @@ parameters:
         auth: token
         engine: kv-v2
         mount: ${secret_management:vault_mount}
+
+  steward:
+    api_url: http://lieutenant.172-18-0-2.nip.io
