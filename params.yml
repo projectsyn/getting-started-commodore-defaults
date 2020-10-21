@@ -1,10 +1,6 @@
 parameters:
-  component_versions:
-    argocd:
-      version: 696b4b4cb9a86ebc845daa314a0a98957f89e99b # Before removing deprecated params
   secret_management:
     vault_addr: https://vault.example.com
-    vault_mount: kv
     vault_role: syn-cluster
   commodore:
     jsonnet_libs:
@@ -25,4 +21,7 @@ parameters:
         VAULT_CAPATH: /etc/ssl/certs/
         auth: token
         engine: kv-v2
-        mount: ${secret_management:vault_mount}
+        mount: clusters/kv
+
+  steward:
+    api_url: http://lieutenant.172-18-0-2.nip.io

@@ -1,5 +1,11 @@
+classes:
+  - global.params
+  - global.distribution.${facts:distribution}
+  - global.cloud.${facts:cloud}
+  - ${cluster:tenant}.${cluster:name}
+
 components:
-- name: argocd
-  url: https://github.com/projectsyn/component-argocd.git
-- name: metrics-server
-  url: https://github.com/projectsyn/component-metrics-server.git
+  - name: argocd
+    url: https://github.com/projectsyn/component-argocd.git
+  - name: metrics-server
+    url: https://github.com/projectsyn/component-metrics-server.git
