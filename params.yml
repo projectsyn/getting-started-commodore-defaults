@@ -1,7 +1,4 @@
 parameters:
-  component_versions:
-    argocd:
-      version: 696b4b4cb9a86ebc845daa314a0a98957f89e99b # Before removing deprecated params
   secret_management:
     vault_addr: https://vault.example.com
     vault_mount: kv
