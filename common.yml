@@ -1,8 +1,3 @@
-classes:
-- global.distribution.${facts:distribution}
-- global.cloud.${facts:cloud}
-- ${cluster:tenant}.${cluster:name}
-
 parameters:
   secret_management:
     vault_addr: https://vault.example.com
