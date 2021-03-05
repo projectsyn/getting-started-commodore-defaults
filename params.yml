@@ -24,3 +24,9 @@ parameters:
 
   steward:
     api_url: http://lieutenant.172-18-0-2.nip.io
+
+  components:
+    argocd:
+      url: https://github.com/projectsyn/component-argocd.git
+    metrics-server:
+      url: https://github.com/projectsyn/component-metrics-server.git
