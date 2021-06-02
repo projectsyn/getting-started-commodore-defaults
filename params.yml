@@ -2,6 +2,11 @@ parameters:
   secret_management:
     vault_addr: https://vault.example.com
     vault_role: syn-cluster
+
+  argocd:
+    monitoring:
+      enabled: false
+
   commodore:
     jsonnet_libs:
       - name: kube-libsonnet
