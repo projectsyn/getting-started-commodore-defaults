@@ -7,4 +7,7 @@ Submit Pull Requests at https://github.com/projectsyn/getting-started-commodore-
 
 ## Releasing
 
-This repo should be tagged with the matching [Commodore version](https://github.com/projectsyn/commodore/releases). The [Getting Started Guide](https://syn.tools/syn/tutorials/getting-started.html) should be updated with the newly released version.
+Tags in this repository should be used to specify the [Commodore version](https://github.com/projectsyn/commodore/releases) with which the configuration has been written/tested.
+The tags are used in the [Getting Started Guide](https://syn.tools/syn/tutorials/getting-started.html) to ensure a matching Commodore version and default configuration are used.
+
+When updating this repository, you should check if the  [Getting Started Guide](https://syn.tools/syn/tutorials/getting-started.html) needs to be updated as well.
