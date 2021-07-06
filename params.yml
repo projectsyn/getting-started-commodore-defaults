@@ -7,14 +7,6 @@ parameters:
     monitoring:
       enabled: false
 
-  commodore:
-    jsonnet_libs:
-      - name: kube-libsonnet
-        repository: https://github.com/bitnami-labs/kube-libsonnet
-        files:
-          - libfile: kube.libsonnet
-            targetfile: kube.libjsonnet
-
   kapitan:
     vars:
       namespace: cluster
