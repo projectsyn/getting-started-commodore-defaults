@@ -25,5 +25,7 @@ parameters:
   components:
     argocd:
       url: https://github.com/projectsyn/component-argocd.git
+      version: v3.0.0
     metrics-server:
       url: https://github.com/projectsyn/component-metrics-server.git
+      version: master
