@@ -6,6 +6,9 @@ parameters:
   argocd:
     monitoring:
       enabled: false
+    images:
+      redis:
+        image: docker.io/library/redis
 
   kapitan:
     vars:
